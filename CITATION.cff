@@ -9,7 +9,7 @@ authors:
   - family-names: Ray
     given-names: Prasanta Kumar
     affiliation: "Sambalpur University, Odisha, India"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-11-14"
 license: MIT
 repository-code: "https://github.com/Arta1729/pisot-reciprocal-sums-code"

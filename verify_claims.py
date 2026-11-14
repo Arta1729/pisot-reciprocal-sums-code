@@ -19,7 +19,7 @@ Arithmetic: mpmath multiprecision floating point (NOT interval arithmetic).
 Working precision is chosen from the size of u_M, and the truncation point M of
 the reciprocal sums is chosen so that the neglected tail changes E_n by far less
 than 1e-30 (the error in E_n is about u_n times the relative tail).  The results are
-computer-assisted, in the same sense as in Section 6 of the paper.
+computer-assisted, in the same sense as in the numerical-results section of the paper.
 
 Usage:   python verify_claims.py            # all checks (a few minutes)
          python verify_claims.py --quick    # skips k = 160 and the n <= 450 scan

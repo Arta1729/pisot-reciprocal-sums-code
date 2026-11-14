@@ -95,7 +95,7 @@ Worst deviation |E_n - root sum|, k-bonacci, 2<=n<=60 (uniformity in k)
  k=12 worst=3.8e-6 at n=13
  k=16 worst=2.38e-7 at n=17
  k=20 worst=1.49e-8 at n=21
-Root sum vs exact E at the indices where |E_n| is maximal (Section 6 (iii))
+Root sum vs exact E at the indices where |E_n| is maximal (observation (iii))
  Fib   n=3 E=-0.26464 Main=-0.26393
  Trib  n=4 E=-0.2182 Main=-0.21732
  Nar   n=3 E=0.38414 Main=0.39162

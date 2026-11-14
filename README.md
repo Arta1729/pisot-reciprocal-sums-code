@@ -3,7 +3,7 @@
 Artatrana Suna and Prasanta Kumar Ray.
 
 This repository contains the Python scripts, and the output they produced, for the numerical results of the paper
-(Tables 1-5 and the numerical observations (i)-(v) of Section 6). All computations use **mpmath multiprecision
+(Tables 1-5 and the numerical observations (i)-(v) of the numerical-results section). All computations use **mpmath multiprecision
 floating-point arithmetic**. No step uses interval arithmetic, so every numerical result is *computer-assisted*, not
 formally certified (see "What is and is not certified" below). The theorems of the paper are proved for every Pisot
 recurrence; the scripts verify finitely many cases numerically.
@@ -22,7 +22,7 @@ python -m pip install -r requirements.txt
 |--------|------------|-------------|------------------|
 | `verify_pisot.py` | Table 1 (constants `alpha, mu, d_1, C_0, C_1`, index `N_0^root`, least starting index `n_*`), Table 2 (root-free index `N_0^exp` under Perron's condition), Table 3 (`alpha_2`, `kappa_2`, `N_par`) | `verify_pisot_output.txt`, `tables_generated.txt` | about 1 minute |
 | `check_error_asymptotics.py` | Table 4 (exact `E_n` against the root sum), Table 5 (residual against the quadratic term), Tribonacci sign statistics and `theta/pi`, uniformity in `k` for `k`-generalized Fibonacci numbers, the closed form of `E_n` for `3 <= n <= k+1` and the value of `E_{k+2}` | `check_error_asymptotics_output.txt` | about 4 minutes |
-| `verify_claims.py` | Remaining numerical claims of Section 6: maxima of `abs(E_n)` for the eleven recurrences of Table 1, the floor rule for `2 <= n <= 59` in the seven second-order rows of Table 3, `abs(E_n) < 1/2` for 30-bonacci up to `n = 450`, the values of `(1-mu)k^3`, and the check that the non-dominant roots of maximal modulus form exactly one non-real conjugate pair for `F^(k)` (`4 <= k <= 40`), `P^(k)` (`4 <= k <= 15`) and `(4;1,0,0,1)` | `verify_claims_output.txt` | about 2 minutes |
+| `verify_claims.py` | Remaining numerical claims of the numerical-results section: maxima of `abs(E_n)` for the eleven recurrences of Table 1, the floor rule for `2 <= n <= 59` in the seven second-order rows of Table 3, `abs(E_n) < 1/2` for 30-bonacci up to `n = 450`, the values of `(1-mu)k^3`, and the check that the non-dominant roots of maximal modulus form exactly one non-real conjugate pair for `F^(k)` (`4 <= k <= 40`), `P^(k)` (`4 <= k <= 15`) and `(4;1,0,0,1)` | `verify_claims_output.txt` | about 2 minutes |
 
 Run times are approximate. The scripts are deterministic: rerunning them with the same mpmath version gives the same
 output as the files provided here.
@@ -33,7 +33,7 @@ output as the files provided here.
 python verify_pisot.py                       # Tables 1-3; also writes tables_generated.txt
 python verify_pisot.py --radii               # inclusion radii and margins 1-q for the eleven recurrences
 python check_error_asymptotics.py            # error-expansion tables and observations
-python verify_claims.py                      # remaining Section 6 claims; exit status 0 if all pass
+python verify_claims.py                      # remaining numerical claims; exit status 0 if all pass
 python verify_claims.py --quick              # skips k = 160 and shortens the n <= 450 scan of 30-bonacci
 ```
 

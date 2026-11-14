@@ -137,7 +137,7 @@ for k in list(range(2,13))+[16,20]:
         d=abs(E_of(u,n,N)-Main(kk,al,oth,Dp,n))
         if d>w: w=d;wn=n
     print(" k=%d worst=%s at n=%d"%(k,nstr(w,3),wn),flush=True)
-print("Root sum vs exact E at the indices where |E_n| is maximal (Section 6 (iii))")
+print("Root sum vs exact E at the indices where |E_n| is maximal (observation (iii))")
 mp.dps=150
 for name,c,n in [("Fib",[1,1],3),("Trib",[1,1,1],4),("Nar",[1,0,1],3),("P4",[1,0,0,1],5),("B4",[3,2,2,1],4),("B5",[2,2,1,1,1],3),("A361",[6,1,1],3),("8b",[1]*8,10)]:
     N=n+400
