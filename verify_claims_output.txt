@@ -1,0 +1,40 @@
+
+1. max |E_n| over 3 <= n <= nmax (observation (iii))
+[PASS] max|E_n| Fibonacci             computed 0.2646, paper 0.2646
+[PASS] max|E_n| Pell                  computed 0.0778, paper 0.0778
+[PASS] max|E_n| (2;3,1)               computed 0.0295, paper 0.0295
+[PASS] max|E_n| Tribonacci            computed 0.2182, paper 0.2182
+[PASS] max|E_n| (3;6,1,1)             computed 0.0216, paper 0.0216
+[PASS] max|E_n| 8-bonacci             computed 0.2490, paper 0.2490
+[PASS] max|E_n| 30-bonacci            computed 0.2500, paper 0.2500
+[PASS] max|E_n| (4;3,2,2,1)           computed 0.0617, paper 0.0617
+[PASS] max|E_n| (5;2,2,1,1,1)         computed 0.1056, paper 0.1056
+[PASS] max|E_n| Narayana (3;1,0,1)    computed 0.3841, paper 0.3841
+[PASS] max|E_n| (4;1,0,0,1)           computed 0.4411, paper 0.4411
+
+2. Floor rule, 2 <= n <= 59 (Table 3)
+[PASS] floor rule (2;1,1)
+[PASS] floor rule (2;2,1)
+[PASS] floor rule (2;3,1)
+[PASS] floor rule (2;3,-1)
+[PASS] floor rule (2;6,-1)
+[PASS] floor rule (2;4,-2)
+[PASS] floor rule (2;5,-3)
+
+3. 30-bonacci: |E_n| < 1/2 for 2 <= n <= 450
+[PASS] 30-bonacci |E_n|<1/2, 2<=n<=450  max|E_n| = 0.5, margin 1/2 - max = 6.51e-19
+
+4. (1 - mu) k^3 for k-generalized Fibonacci numbers
+[PASS] (1-mu)k^3, k=10  computed 31.8, paper 31.8
+[PASS] (1-mu)k^3, k=20  computed 40.2, paper 40.2
+[PASS] (1-mu)k^3, k=40  computed 41.3, paper 41.3
+[PASS] (1-mu)k^3, k=80  computed 40.7, paper 40.7
+[PASS] (1-mu)k^3, k=160  computed 40.2, paper 40.2
+   (4*pi^2 = 39.478)
+
+5. Roots of maximal modulus: exactly one non-real conjugate pair
+[PASS] F^(k), 4<=k<=40
+[PASS] P^(k), 4<=k<=15
+[PASS] (4;1,0,0,1)
+
+All checks passed.
